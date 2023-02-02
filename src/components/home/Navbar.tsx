@@ -4,7 +4,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className='bg-gray-900 h-20 shadow-md flex px-20 justify-between'>
+    <div className='bg-gray-900 h-20 shadow-sm flex px-20 justify-between'>
       {/* LOGO */}
       <div className='flex items-center '>
         <h1 className='text-amber-500 text-2xl font-semibold font-sans'>
