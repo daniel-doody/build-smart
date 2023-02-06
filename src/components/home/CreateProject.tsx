@@ -43,8 +43,7 @@ const CreateProject = () => {
         className='w-2/5 h-4/5 m-auto mt-20 rounded-lg shadow-xl z-20 bg-white border-b-8 border-gray-600'
       >
         <form className='p-12 z-20 relative' onSubmit={handleSubmit}>
-          <h3 className='text-xl font-thin mb-2'>Sign in to</h3>
-          <h1 className='text-2xl font-bold mb-4'>Executive Comp Analyzer</h1>
+          <h1 className='text-2xl font-bold mb-4'>Create a Project</h1>
           <button
             onClick={() => setIsOpen(false)}
             className='absolute text-xl top-4 right-6 text-gray-300 font-extrabold hover:scale-110 hover:text-gray-500'
