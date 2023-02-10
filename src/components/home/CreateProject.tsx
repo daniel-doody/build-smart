@@ -7,7 +7,7 @@ const CreateProject = () => {
   const [formData, setFormData] = useState({});
 
   // update form object after each keystroke
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -16,7 +16,7 @@ const CreateProject = () => {
   };
 
   // submit form: send post request to server @ /login
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(formData);
 
