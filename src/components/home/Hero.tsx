@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import CreateProject from './CreateProject';
 import Navbar from './Navbar';
 
 const Hero = () => {
@@ -54,12 +55,7 @@ const Hero = () => {
                 from a powerful line-of-sight tool.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
-                <a
-                  href='#'
-                  className='rounded-md bg-indigo-600 px-6 py-2 hover:shadow-md text-base font-semibold leading-7 text-white shadow-sm hover:scale-105 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                >
-                  Create a Project
-                </a>
+                <CreateProject />
                 <a
                   href='#'
                   className='text-base font-semibold leading-7 text-gray-900'

@@ -28,10 +28,13 @@ const Demo = (props: Props) => {
               </h2>
 
               <p className='mt-4 text-gray-50 pb-4'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, molestiae! Quidem est esse numquam odio deleniti,
-                beatae, magni dolores provident quaerat totam eos, aperiam
-                architecto eius quis quibusdam fugiat dicta.
+                With BuildSmart, you can experience your outdoor spaces in a
+                whole new way. Our cutting-edge platform allows you to create
+                visualization points to see how buildings and other structures
+                obstruct your view. Whether you're a city planner, landscape
+                designer, or real estate developer, our 3D visualization tools
+                give you the power to make informed decisions and bring your
+                projects to life.
               </p>
             </div>
           </div>

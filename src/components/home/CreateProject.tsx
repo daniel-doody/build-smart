@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
+import VscTools from 'react-icons/vsc';
 
 const CreateProject = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const CreateProject = () => {
     <div>
       <button
         onClick={() => setIsOpen(true)}
-        className='text-white mt-8 text-bold bg-amber-500 hover:bg-amber-400 font-bold rounded-md shadow-sm py-4 px-10 hover:scale-105'
+        className='rounded-md bg-indigo-600 px-6 py-2 hover:shadow-md text-base font-semibold leading-7 text-white shadow-sm hover:scale-105 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
       >
         Create a Project
       </button>
@@ -43,7 +44,7 @@ const CreateProject = () => {
         className='w-2/5 h-4/5 m-auto mt-20 rounded-lg shadow-xl z-20 bg-white border-b-8 border-gray-600'
       >
         <form className='p-12 z-20 relative' onSubmit={handleSubmit}>
-          <h1 className='text-2xl font-bold mb-4'>Create a Project</h1>
+          <h1 className='text-2xl font-bold mb-4'>Create your first build!</h1>
           <button
             onClick={() => setIsOpen(false)}
             className='absolute text-xl top-4 right-6 text-gray-300 font-extrabold hover:scale-110 hover:text-gray-500'
@@ -62,23 +63,11 @@ const CreateProject = () => {
               onChange={handleChange}
             />
           </div>
-          <div className='mb-4'>
-            <label className='block font-medium mb-2' htmlFor='password'>
-              Password:
-            </label>
-            <input
-              className='border rounded w-full py-2 px-3'
-              type='password'
-              placeholder='Password'
-              name='password' // the sent object key
-              onChange={handleChange}
-            />
-          </div>
+
           <button
             className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded shadow-sm hover:scale-105 hover:shadow-lg '
             type='submit'
             value='login'
-            href='/dashboard'
           >
             Login
           </button>
