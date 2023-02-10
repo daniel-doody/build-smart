@@ -34,31 +34,31 @@ const Hero = () => {
       <Navbar />
       <main>
         <div className='relative px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
+          <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:pb-56 lg:pt-42'>
             <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
               <div className='relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
                 BuildSmart is an open source 3D GIS software.{' '}
                 <a href='#' className='font-semibold text-indigo-600'>
                   <span className='absolute inset-0' aria-hidden='true' />
-                  Read more <span aria-hidden='true'>&rarr;</span>
+                  Open GitHub <span aria-hidden='true'>&rarr;</span>
                 </a>
               </div>
             </div>
             <div className='text-center'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                Data to enrich your online business
+                Visualize Your Surroundings in 3D
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Empower Your Building Decisions with Realistic View Analysis,{' '}
+                <br />
+                from a powerful line-of-sight tool.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
                 <a
                   href='#'
-                  className='rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  className='rounded-md bg-indigo-600 px-6 py-2 hover:shadow-md text-base font-semibold leading-7 text-white shadow-sm hover:scale-105 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 >
-                  Get started
+                  Create a Project
                 </a>
                 <a
                   href='#'
