@@ -112,16 +112,16 @@
          **************************************/
 
         viewModel.observer = new Point({
-          latitude: 42.3521,
-          longitude: -71.0564,
+          latitude: xValue || 42.3521,
+          longitude: yValue || -71.0564,
           z: 139,
         });
 
         viewModel.targets = [
-          createTarget(42.3492, -71.0529),
-          createTarget(42.3477, -71.0542),
-          createTarget(42.3485, -71.0533),
-          createTarget(42.3467, -71.0549),
+          createTarget(xValue - 0.0029 || 42.3492, yValue + 0.0035 || -71.0529),
+          createTarget(xValue - 0.0044 || 42.3477, yValue - 0.0022 || -71.0542),
+          createTarget(xValue - 0.0036 || 42.3485, yValue + 0.0031 || -71.0533),
+          createTarget(xValue + 0.0054 || 42.3467, yValue + 0.0015 || -71.0549),
         ];
 
         function createTarget(lat, lon, z) {
@@ -136,13 +136,13 @@
 
         // add an Expand widget to make the menu responsive
         const expand = new Expand({
-          expandTooltip: 'Expand line of sight widget',
+          expandTooltip: 'Expand BuildSmart helper',
           view: view,
           content: document.getElementById('menu'),
           expanded: true,
         });
 
-        view.ui.add(expand, 'top-right');
+        view.ui.add(expand, 'bottom-right');
 
         view.when(() => {
           // allow user to turn the layer with new planned buildings on/off
@@ -186,7 +186,7 @@
           <h3>Line of sight analysis</h3>
           <input type="checkbox" id="layerVisibility" checked /><label
             for="layerVisibility"
-            >Show development layer</label
+            >Show city-approved projects</label
           >
           <div id="losWidget"></div>
         </div>
