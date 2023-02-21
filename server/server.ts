@@ -62,5 +62,5 @@ app.use(
 );
 
 app.listen(PORT, () => {
-  console.log(`Server running: ${server}`);
+  console.log(`Server running: ${PORT}`);
 });

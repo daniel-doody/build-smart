@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "go": "go run server/main.go",
+    "static": "node server/server.ts"
   },
   "dependencies": {
     "@arcgis/core": "^4.25.5",
