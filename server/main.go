@@ -13,7 +13,7 @@ func main() {
     fs := http.FileServer(http.Dir("src/pages"))
     http.Handle("/dashboard/", http.StripPrefix("/dashboard", fs))
 
-	fmt.Println("Hello, world!")
+	fmt.Println("Go server on http://localhost:8080/dashboard")
     err := http.ListenAndServe(":8080", nil)
 
     if err != nil {
